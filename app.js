@@ -8,6 +8,10 @@ App.Router.map(function() {
   this.route('contact');
   this.route('schedule');
   this.route('conference');
+  this.route('overview', {path:"/conference/overview"});
+  this.route('dates', {path:"/conference/dates"});
+  this.route('questions', {path:"/conference/questions"});
+  this.route('schedule', {path:"/conference/schedule"});
 });
 
 App.IndexRoute = Ember.Route.extend({

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<title>ASES Summit 2014</title>
+	<head>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+		<link href="application.css" rel='stylesheet' />
+		<script src='jquery.js'></script>
+		<script src='bootstrap.js'></script>
+		<script src='handlebars.js'></script>
+		<script src='ember.js'></script>
+		<script src='app.js'></script>
+	</head>
+	<body>
+		<script type="text/x-handlebars" data-template-name="application">
+			<div class='container'>
+				<div class='row'>
+					<div class='col-sm-4'>
+						<h1><i class="fa fa-picture-o fa-lg"></i> ASES Summit </h1>
+					</div>
+					<div class='col-sm-8'>
+						<ul id="navbar" class="nav nav-pills">
+							<li>{{#link-to 'index'}}<i class="fa fa-home"></i> Home{{/link-to}}</li>
+							<li>{{#link-to 'team'}}Our Team{{/link-to}}</li>
+							<li>{{#link-to 'about'}}About{{/link-to}}</li>
+							<li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+							<li>{{#link-to 'conference'}}The 2014 Summit <i class="fa fa-exclamation-circle"></i> {{/link-to}}</li>
+						</ul>
+					</div>
+				</div>
+				<HR>
+				<div class="container">
+					{{outlet}}
+				</div>
+			</div>
+		</script>
+		<script type="text/x-handlebars" data-template-name="index">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Home</h1>
+					<p>Welcome home!</p>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-handlebars" data-template-name="about">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>About</h1>
+					<p>About us!</p>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-handlebars" data-template-name="contact">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Contact</h1>
+					<p>How to contact us</p>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-handlebars" data-template-name="team">
+			<div class="row">
+				<div class="col-sm-3">
+					<h3><small>Meet Our Team</small></h3>
+					<div class='list-group'>
+			          {{#each}}
+			            {{#link-to 'member' this classNames='list-group-item'}}
+			              {{name}}
+			            {{/link-to}}
+			          {{/each}}
+			        </div>
+				</div>
+				<div class="col-sm-9">
+					{{outlet}}
+				</div>
+			</div>
+		</script>
+		<script type='text/x-handlebars' data-template-name='conference'>
+    		<div class="row">
+    			<div class="col-sm-3">
+    			</div>
+    			<div class="col-sm-9">
+    				<p class='text-muted'>This is landing page for participants of the 2014 Stanford Summit.</p>
+    			</div>
+    		</div>
+  		</script>
+		<script type='text/x-handlebars' data-template-name='team/index'>
+    		<p class='text-muted'>Choose a team member from the left!</p>
+  		</script>
+		<script type="text/x-handlebars" data-template-name="member">
+			<div class="row">
+				<div class="col-sm-3">
+					<img {{bind-attr src='image'}}/> 
+				</div>
+				<div class="col-sm-6">
+					<h2>{{name}}</h2>
+					<p>{{bio}}</p>
+				</div>
+			</div>
+		</script>
+	</body>
+</html>

@@ -31,9 +31,14 @@ App.MemberRoute = Ember.Route.extend({
 });
 App.TEAM = [
 	{
-		name:'David',
+		name:'David Jiang',
 		image: 'images/david.jpg',
-		bio: 'This is David'
+		bio: 'David is studying Computer Science with an emphasis on Human-Computer Interaction at Stanford University. In his free time, he loves to play basketball and sing.'
+	},
+	{
+		name:'Andrew Khor',
+		image: 'images/andrew.jpg',
+		bio: 'Andrew Khor'
 	},
 	{
 		name:'Steven Hong',
@@ -43,17 +48,22 @@ App.TEAM = [
 	{
 		name:'Emily Tang',
 		image: 'images/emilyt.jpg',
-		bio: 'This is Emily Tang'
+		bio: 'Emily is a sophomore from Taipei, Taiwan looking to double major in computer science and psychology. Outside of academics, Emily enjoys dancing in her hip hop group and playing violin in the Stanford Symphony Orchestra.'
 	},
 	{
-		name:'Jonathan',
-		image: 'images/jonathan.jpg',
-		bio: 'This is Jonathan'
+		name:'Jonathan Yan',
+		image: 'images/Jonathan.png',
+		bio: 'Jonathan is a sophomore at Stanford studying computer science and product design.  He enjoys working with and learning from other people to solve problems.  Bike making and film photography are his latest obsessions.  '
 	},
 	{
 		name:'Steven Qian',
 		image: 'images/stevenq.jpg',
-		bio: 'This is Steven Qian'
+		bio: 'Sup, this is Steven. I am a cs major, bboy, and musician. This is my room, and this is my cactus.'
+	},
+	{
+		name:'Calvin Ling',
+		image: 'images/Calvin.jpg',
+		bio: 'Calvin was born and raised in Austin, Texas. He is currently a sophomore majoring in Management Science and Engineering. He is a big fan of cars and traveling.'
 	},
 	{
 		name:'Quentin',
@@ -61,38 +71,38 @@ App.TEAM = [
 		bio: 'This is Quentin'
 	},
 	{
-		name:'Allen',
+		name:'Allen Yu',
 		image: 'images/allen.jpg',
-		bio: 'This is Allen'
+		bio: 'Allen wants to help promote global entrepreneurship. He loves to learn and his passion is combining computer science and business. When he is not drinking orange juice, Allen enjoys snowboarding, playing bridge, and going on adventures.'
 	},
 	{
 		name:'Emily Xie',
-		image: 'images/emilyx.jpg',
-		bio: 'This is Emily Xie'
+		image: 'images/emilyxie.jpeg',
+		bio: 'Emily is a freshman from Minnesota who is planning to major in Computer Science and minor in Economics. She likes to blog, learn new things, and work on various projects outside of school. Emily is currently learning more about web design and Javascript in her free time and hopes to be able to create well-designed web pages in the future.'
 	},
 	{
-		name:'Nghia',
+		name:'Nghia Nguyen',
 		image: 'images/nghia.jpg',
-		bio: 'This is Nghia'
+		bio: 'Nghia is a freshman from Burlington, Vermont. He loves playing soccer and is on the club team at Stanford. He is also involved in SASE (Society of Asian Scientists & Engineers). He was born in Vietnam and moved the the United States at the age of 5. As a member of ASES, he hopes to integrate business and engineering at Stanford as well as follow his entrepreneurial passion.'
 	},
 	{
-		name:'Surya',
+		name:'Surya Narayanan',
 		image: 'images/surya.jpg',
-		bio: 'This is Surya'
+		bio: 'My name is Surya Narayanan, currently I am a freshman at Stanford.  I have been involved in ASES since fall 2013. I am heavily interested in and involved in education and public service in south asia, specifically india.'
 	},
 	{
-		name:'Shreyam',
+		name:'Shreyam Desai',
 		image: 'images/shreyam.jpg',
-		bio: 'This is Shreyam'
+		bio: 'Watup, I am Shreyam from Mumbai and I am currently a freshman at Stanford looking to major in Economics and minor in mathematical and computational science.  Prior to coming to the farm, I was heavily involved in Indian Development, particularly microcredit and sustainability, through entrepreneurship and hope to continue doing something meaningful at the farm. In my spare time I enjoy reading, deep conversations, tennis, smooth jazz, and the Mumbai monsoons'
 	},
 	{
-		name:'Manu',
+		name:'Manu Chopra',
 		image: 'images/manu.jpg',
-		bio: 'This is Manu'
+		bio: "Manu Chopra is a freshman at Stanford University and a member of the Class of 2017. He invented and patented the anti molestation device in high school for which he was awarded by the Indian President. He is also the winner of India's most prestigious scholarship, Times Scholar. His aim in ASES is to meet entrepreneurs from a similar yet different background."
 	},
 	{
-		name:'Aashna',
-		image: 'images/aashna.jpg',
-		bio: 'This is Aashna'
+		name:'Alex',
+		image: 'images/alex.jpg',
+		bio: 'This is Alex'
 	}
 ];

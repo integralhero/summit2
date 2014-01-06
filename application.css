@@ -2,3 +2,57 @@
 	position: relative;
 	top: 1.5em;
 }
+#navbar>li>a{
+	color: #A40028;
+}
+.btn-lg {
+	background:#A40028;
+	border-color: #A40028;
+}
+.btn-lg:hover {
+	background: #AF0030;
+	border-color: #A40028;
+}
+a {
+	color: #A40028;
+}
+a:hover {
+	color: #BF0028;
+}
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+	background: #B80028;
+	border-color: #A40028;
+}
+.biopic {
+	height: auto;
+	width: 190px;
+	margin: 5px;
+	transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	opacity: 0.2;
+	position: relative;
+
+}
+.biopic:hover {
+	width: 200px;
+	position: relative;
+	bottom: 5px;
+	right: 5px;
+	border: 5px solid rgba(186,24,24,1.0);
+	opacity: 1.0;
+}
+#team {
+	opacity: 0.5;
+	width: 450px;
+
+}
+.headpic {
+	width: auto;
+	height: 60%;
+}
+#updates {
+	overflow: auto;
+	overflow-x: hidden;
+	height: 500px;
+}
